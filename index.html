@@ -6,14 +6,14 @@
     <title>For Heather ❤️</title>
     <style>
         body {
-            background-color: #fffaf0; /* Warm Floral White */
+            background-color: #fffaf0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            overflow: hidden; /* Prevents scrollbars from icons */
+            overflow: hidden;
             text-align: center;
         }
         .container {
@@ -37,9 +37,14 @@
             transition: all 0.3s ease;
         }
         button:hover { background-color: #ffc0cb; transform: scale(1.05); }
-        #loveMessage { margin-top: 25px; color: #ff69b4; font-size: 1.4rem; min-height: 1.5em; }
+        #loveMessage { 
+            margin-top: 25px; 
+            color: #ff69b4; 
+            font-size: 1.8rem; 
+            font-weight: bold;
+            min-height: 1.5em; 
+        }
 
-        /* Cute Floating Icons CSS */
         .floating-icon {
             position: fixed;
             bottom: -10%;
@@ -47,7 +52,7 @@
             user-select: none;
             pointer-events: none;
             opacity: 0;
-            animation: floatUp linear forwards;
+            font-size: 2rem;
         }
 
         @keyframes floatUp {
@@ -59,14 +64,13 @@
     </style>
 </head>
 <body>
+
     <div class="container">
         <h1>Hi my love! ❤️</h1>
         <p>I have a message for you...</p>
         <button id="loveBtn">Click Me!</button>
         <div id="loveMessage"></div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
-
