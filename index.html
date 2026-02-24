@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Heather ❤️</title>
+    <style>
+        body {
+            background-color: #fffaf0; /* Warm Floral White */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden; /* Prevents scrollbars from icons */
+            text-align: center;
+        }
+        .container {
+            background: white;
+            padding: 3rem;
+            border-radius: 30px;
+            box-shadow: 0 10px 30px rgba(255, 182, 193, 0.3);
+            position: relative;
+            z-index: 10;
+        }
+        h1 { color: #ffb6c1; font-size: 2.5rem; }
+        p { color: #888; }
+        button {
+            background-color: #ffb6c1;
+            color: white;
+            border: none;
+            padding: 15px 35px;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        button:hover { background-color: #ffc0cb; transform: scale(1.05); }
+        #loveMessage { margin-top: 25px; color: #ff69b4; font-size: 1.4rem; min-height: 1.5em; }
+
+        /* Cute Floating Icons CSS */
+        .floating-icon {
+            position: fixed;
+            bottom: -10%;
+            z-index: 1;
+            user-select: none;
+            pointer-events: none;
+            opacity: 0;
+            animation: floatUp linear forwards;
+        }
+
+        @keyframes floatUp {
+            0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+            20% { opacity: 0.8; }
+            80% { opacity: 0.8; }
+            100% { transform: translateY(-120vh) rotate(360deg); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hi Heather! 👋</h1>
+        <p>I have a message for you...</p>
+        <button id="loveBtn">Click Me!</button>
+        <div id="loveMessage"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
