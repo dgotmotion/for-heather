@@ -6,10 +6,11 @@ document.getElementById('loveBtn').addEventListener('click', function() {
     messageDiv.innerHTML = "I love you so much! ❤️";
     
     // Optional: Add a little alert pop-up
-    alert("Heather, you are so perfect and im so lucky to able to call you my gf, me and you forever!❤️");
+    alert("Heather, you are so perfect and im so lucky to able to call you my gf, me and you forever!❤️💍");
     
     // Change button text after click
     this.innerText = "Sent! ✨";
     this.style.backgroundColor = "#d63384";
 });
+
 
